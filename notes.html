@@ -9,17 +9,23 @@
 </head>
 <body>
     <!--this is compressed into one single space-->
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    <h1>My Notes From The Odin Project - Quanzee</h1>
 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <h2>Some early useful commands...</h2>
     
+    <ul>
+        <li>Type ! to generate boilerplate in VSCode</li>
+        <li>Type Ctrl + / to generate comment in VSCode</li>
+    </ul>
+    
+    <h2>Paragraph</h2>
     <!--specify paragraph elements if we want separate paragraphs-->
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.</p>
+    <p>Use the pagraph element &lt;p&gt; if you want your text in separate paragraphs.<p></p>
       
     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
         nisi ut aliquip ex ea commodo consequat.</p>
     
+    <h2>Heading</h2>
     <h1>This is a heading 1</h1>
     <h2>This is a heading 2</h2>
     <h3>This is a heading 3</h3>
@@ -28,13 +34,18 @@
     <h6>This is a heading 6</h6>    
 
     <!-- bold text-->
-    <p>Lorem ipsum <strong>dolor sit</strong> amet, consectetur adipiscing elit.</p>
+    <h2>Bold Text</h2>
+    <p>Use &lt;strong&gt; to bold text</p>
 
     <!-- italicise text -->
-    <p>Lorem ipsum <em>dolor sit</em> amet, consectetur adipiscing elit.</p>
+    <h2>Italicise Text</h2>
+    <p>Use &lt;em&gt; to italicise text</p>
 
-    <!-- html parent elements can have many children -->
-    <!-- these elements at the same level of nesting are called siblings -->
+    <h2>Nested elements</h2>
+    <ul>
+        <li>html parent elements can have many children</li>
+        <li>these elements at the same level of nesting are called siblings</li>
+    </ul>
 
     <h2>Lists</h2>
     <h3>Unordered lists</h3>
@@ -49,5 +60,65 @@
         <li>Each individual item is also created with li</li>
         <li>Each list item in an ordered list begins with a number</li>
     </ol>
+
+    <h2>Anchor elements</h2>
+    <p>To create a link in HTML, wrap text/element which will be a link with &lt;a&gt;</p>
+    <ul>
+        <li>Use an HTML attribute (href) to tell the anchor tag its destination</li>
+    </ul>
+
+    <h3>HTML Attributes</h3>
+    <ul>
+        <li>Gives additional information to an HTML elements</li>
+        <li>Always goes in the element's opening tag</li>
+    </ul>
+    <a href="https://www.theodinproject.com/about">This is a link to The Odin Project</a>
+    <ul>
+        <li>Without the target attribute, the link will open in the same tab as the webpage containing it</li>
+        <li>The target attribute specifies where the linked resource will be opened</li>
+        <li>Set target to __blank</li>
+        <li>Include the rel attribute for security purposes</li>
+    </ul>
+    <h3>rel</h3>
+    <ul>
+        <li><strong>rel</strong> describes the relation between the current page and the linked document</li>
+        <li>noopener value ensures a link opened in a new tab/window cannot interact with the original page</li>
+        <li>noreferrer provides both privary and security by hiding the referrer from the new page</li>
+    </ul>
+    <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">This link will open in a new tab now</a>
+
+    <h2>Absolute and relative links</h2>
+    <p><strong>Absolute Links</strong>: links to pages on other websites on the internet</p>
+    <ul>
+        <li>scheme://domain/path</li>
+        <li>scheme: http</li>
+        <li>domain:www.theodinproject.com</li>
+        <li>path:about</li>
+    </ul>
+    <p><strong>Relative Links</strong>: links to other pages within our own website</p>
+    <ul>
+        <li>does not include the domain name</li>
+        <li>only includes the file path to the other page relative to the page the link is being created on</li>
+        <li>add <strong>./</strong> to specify that your code should start looking for the file/directory relative to the current directory</li>
+    </ul>
+    <a href="./pages/relative-link.html">Test Relative Link</a>
+
+    <h2>Images</h2>
+    <ul>
+        <li>The &lt;img&gt; is a void element</li>
+        <li>Instead of wrapping content, it embeds an image into the page using a src attribute</li>
+        <li><strong>src attribute</strong> tells the browser where the image file is located</li>
+        <li>src attribute can use both absolute and relative paths as well</li>
+    </ul>
+    <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo" height="310" width="310">
+    <img src="./images/dog.jpg" alt="Image of a dog" height="310" width="310">
+
+    <h3>Alt attribute</h3>
+    <ul>
+        <li>Every image element should also have this attribute</li>
+        <li>Used to describe an image</li>
+        <li>Used in place of the image if it cannot be loaded</li>
+    </ul>
+
 </body>
 </html>
