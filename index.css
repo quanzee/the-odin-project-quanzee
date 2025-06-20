@@ -1,0 +1,12 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+}
